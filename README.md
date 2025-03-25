@@ -11,5 +11,10 @@
     - <b>Amazon EventBridge</b> : Scheduled to run the Lambda function every night at 12:00:00 UTC 
     - <b>Amazon Quicksight</b> : Used to visually represent the dataset stored in our S3 bucket.
  
-  
-     
+<b><u>Pipeline</u></b>
+<br></br>
+<img src="images/Screenshot 2025-03-24 200729.png" height="50%" width="50%"/>
+
+<b>Dashboard Display Mar.21 - Mar.24 Data </b>
+<br></br>
+<img src="images/Screenshot 2025-03-25 151618.png" height="90%" width="90%"/>
