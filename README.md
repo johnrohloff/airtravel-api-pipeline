@@ -13,7 +13,7 @@
  
 <b><u>Pipeline</u></b>
 <br></br>
-<img src="images/Screenshot 2025-03-24 200729.png" height="50%" width="50%"/>
+<img src="images/Airtravel_setup.png" height="50%" width="50%"/>
 
 <b>Dashboard Display Mar.21 - Mar.24 Data </b>
 <br></br>
