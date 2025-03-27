@@ -2,13 +2,13 @@
 
 ### 1. Create a default bucket ###
 
-aws s3api create-bucket --bucket bucket_name --region us-east-1
+aws s3api create-bucket --bucket BUCKET_NAME --region us-east-1
 
 
-###  2. Assign the bucket policy to the bucket  ###
+###  2. Assign the bucket policy to the bucket (Ensure the policy is in the current directory)  ###
 
 aws s3api put-bucket-policy --bucket BUCKET_NAME --policy file://bucket-policy.json
 
 
 ### 3. Upload the manifest.json document to the S3 bucket for Amazon Quicksight ###
-aws s3api put-object --bucket BUCKET-NAME --key s3_setup/manifest.json --body manifest.json
+aws s3api put-object --bucket BUCKET_NAME --key manifest.json --body manifest.json

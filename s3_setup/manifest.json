@@ -1,7 +1,7 @@
 {
     "fileLocations": [
         { "URIPrefixes": [
-            "s3://BUCKET-NAME/"
+            "s3://BUCKET_NAME/"
             ] }
     ],
     "globalUploadSettings": {

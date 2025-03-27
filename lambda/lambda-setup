@@ -1,0 +1,29 @@
+### 1. Write some lambda code - lambda-func.py ###
+lambda-func.py
+
+
+### 2. Zip  the lambda code ###
+zip lambda-func.zip lambda-func.py #For linux
+#Or
+Compress-Archive -Path lambda-func.py -DestinationPath lambda-func.zip #For Powershell
+
+
+### 3. Create an IAM Role for the lambda func ###
+aws iam create-role --role-name lambda-s3-role --assume-role-policy-document create-lambda-role.json
+
+
+### 4. Attach S3 policy to the lambda role ###
+aws iam put-role-policy --role-name lambda-s3-role --policy-name S3PutPolicy --policy-document file://lambda-policy.json
+
+
+### 5. Deploy lambda func ###
+
+aws lambda create-function --function-name lambdatestfunc --runtime python3.8 --role arn:aws:iam::ACCOUNTIDHERE:role/lambda-s3-role --handler lambda-func.lambda_handler --zip-file fileb://lambda-func.zip
+
+
+### Test if created ###
+aws lambda list-functions
+
+
+### Generic test on the function ###
+aws lambda invoke --function-name lambdatestfunc output.txt

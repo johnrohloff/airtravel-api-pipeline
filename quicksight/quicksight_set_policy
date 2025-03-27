@@ -1,0 +1,5 @@
+### Command to assign this policy to a role, allowing access to your bucket. Call while in /quicksight directory ###
+
+aws iam put-role-policy --role-name quicksight-role --policy-name quicksight-s3-policy --policy-document file://quicksight-s3-policy.json
+
+
