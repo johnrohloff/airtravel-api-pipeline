@@ -5,11 +5,11 @@
 <br></br>
 
 - Features used:
-    - <b>AWS Lambda</b> : A function to grab specific data using AviationStack API focusing on the most recent flight information from specific Canadian airports, results are written to S3 in csv format.
-    - <b>AviationStack API</b> : An API to grab daily air travel information
-    - <b>Amazon S3</b> : Used to store the resulting csv files, directly written to by the lambda function
-    - <b>Amazon EventBridge</b> : Scheduled to run the Lambda function every night at 12:00:00 UTC 
-    - <b>Amazon Quicksight</b> : Used to visually represent the dataset stored in our S3 bucket.
+    - <b>AWS Lambda</b> : Uses AviationStack API to acquire flight information from specific Canadian airports and produces csv files as output
+    - <b>AviationStack API</b> : An API to grab daily air travel information from select airports
+    - <b>Amazon S3</b> : Stores the resulting csv files, directly written to by the lambda function
+    - <b>Amazon EventBridge</b> : Scheduled to run the Lambda function at 00:00:00 UTC daily
+    - <b>Amazon Quicksight</b> : Visually represents the dataset stored in our S3 bucket.
  
 <b><u>Pipeline</u></b>
 <br></br>
